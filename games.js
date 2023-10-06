@@ -3,21 +3,20 @@ let userScore = 0;
 let computerScore = 0;
 
 function playGame(userChoice) {
-  if (round < 5) {
     const choices = ["rock", "paper", "scissors"];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-
     const outcome = determineOutcome(userChoice, computerChoice);
-
+    if (round < 5) {
     round++;
     updateScores(outcome);
     displayOutcome(outcome);
 
-  if (round === 5) {
-    displayFinalResult();
+    if (round === 5) {
+       displayFinalResult();
+       }
     }
-  }
 }
+
 function determineOutcome(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         return "tie";
@@ -30,19 +29,18 @@ function determineOutcome(userChoice, computerChoice) {
     } else {
         return "lose";
     }
-  }
+}
 
-  function updateScores(outcome) {
+function updateScores(outcome) {
+    document.getElementById("round").textContent = round;
+    document.getElementById("user-score").textContent = userScore;
+    document.getElementById("computer-score").textContent = computerScore;
     if (outcome === "win") {
         userScore++;
     } else if (outcome === "lose") {
         computerScore++;
-    }
-    document.getElementById("round").textContent = round;
-    document.getElementById("user-score").textContent = userScore;
-    document.getElementById("computer-score").textContent = computerScore;
+    }  
 }
-
 function displayOutcome(outcome) {
     const outcomeElement = document.getElementById("game-outcome");
 

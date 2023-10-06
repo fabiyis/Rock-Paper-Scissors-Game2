@@ -2,8 +2,6 @@ body {
     font-family: Arial, sans-serif;
     background-image: url(image/sebastian-svenson-LpbyDENbQQg-unsplash.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    margin: auto;
 }
 
 .game-container {
@@ -19,12 +17,11 @@ body {
     justify-content: center;
     font-size: larger;
     color: rgb(70, 64, 64);
-    margin-bottom: 10px;
 }
 
 body p{
     font-size: 15px;  
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 h1 {
