@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    background-image: url(image/sebastian-svenson-LpbyDENbQQg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game-container {
+    align-items: center;
+    background-color: rgb(161, 161, 108);
+    padding: 15px;
+}
+
+.game-container p {
+    font-style: italic;
+    justify-content: center;
+    font-size: larger;
+    color: rgb(70, 64, 64);
+}
+
+body p{
+    font-size: 15px;  
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    justify-content: center;
+}
+
+h1 span {
+    color: rgb(146, 107, 7)
+}
+
+.result {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: beige;
+}
+
+button {
+    border-radius: 10px;
+    padding: 8px;
+    margin: 5px;
+}
