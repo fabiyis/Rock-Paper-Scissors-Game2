@@ -54,3 +54,15 @@ function displayOutcome(outcome) {
         outcomeElement.textContent = "You lose this round!";
     }
 }
+
+function displayFinalResult() {
+    const finalResultElement = document.getElementById("final-result");
+
+    if (userScore > computerScore) {
+        finalResultElement.textContent = "Congratulations! You win the game!";
+    } else if (userScore < computerScore) {
+        finalResultElement.textContent = "Sorry, you lose the game.";
+    } else {
+        finalResultElement.textContent = "It's a tie game.";
+    }
+}
